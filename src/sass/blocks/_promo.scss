@@ -53,8 +53,11 @@
             transform: translateX(-50%);
             top: 35%;
             bottom: auto;
+            max-width: 1150px;
+            width: 100%;
         }
         &__header {
+            text-align: center;
             font-weight: 500;
             font-size: 40px;
             color: #FFFFFF;
@@ -125,7 +128,12 @@
             opacity: 0.5;
             transition: all .6s ease;
             &_active {
+                box-sizing: content-box;
+                width: 30px;
+                height: 3px;
+                background: #FFFFFF;
                 opacity: 1;
+                transition: all .6s ease;
             }
         }
     }
