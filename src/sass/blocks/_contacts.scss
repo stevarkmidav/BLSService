@@ -1,0 +1,72 @@
+.contacts {
+    background: #DEE2E6;
+    padding: 50px 0;
+    color: #212529;
+    &__header {
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+    }
+    &__wrapper {
+        padding-top: 45px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+        max-width: 1100px;
+    }
+    &__about {
+        box-sizing: border-box;
+        padding: 0 12px;
+        width: calc(50% - 6px);
+    }
+    &__phone {
+        &__header {
+            margin-top: 5px;
+            font-weight: 300;
+            font-size: 20px;
+        }
+        &__link {
+            margin: 20px 0 17px 0;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            text-decoration: none;
+            max-width: 230px;
+        }
+        &__img {
+            margin-right: 8px;
+            width: 30px;
+            height: 30px;
+        }
+        &__number {
+            font-weight: 500;
+            font-size: 28px;
+            color: #212529;
+        }
+    }
+    &__address {
+        &__header {
+            margin-bottom: 20px;
+            font-weight: 300;
+            font-size: 20px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(33, 37, 41, .25);
+
+        }
+        &__link {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 28px;
+            color: #212529;
+        }
+        &__descr {
+            margin-top: 15px;
+            font-weight: 400;
+            font-size: 20px;
+            padding-bottom: 17px;
+            border-bottom: 1px solid rgba(33, 37, 41, .25);;
+        }
+    }
+}

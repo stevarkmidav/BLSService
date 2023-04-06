@@ -1,0 +1,93 @@
+.services {
+    margin-top: 24px;
+    &__header {
+        font-weight: 500;
+        font-size: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #212529;
+    }
+    &__about {
+        margin: 0 auto;
+        padding-top: 8px;
+        max-width: 856px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        span {
+            font-weight: 400;
+        }
+    }
+    &__wrapper {
+        margin-top: 24px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min-content, 416px));
+        grid-template-rows: repeat(2, minmax(300px, max-content));
+        gap: 16px 24px;
+    }
+    &__blocks {
+        padding: 8px 8px 24px 8px;
+        position: relative;
+        color: #FFFFFF;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            filter: brightness(20%);
+            z-index: -1;
+        }
+        &_first {
+            &::before {
+                background: url('../img/tools.jpeg') center (center / cover) no-repeat ;
+            }
+        }
+        &_second {
+            &::before {
+                background: url('../img/wheels.jpeg') center (center / cover) no-repeat;
+            }
+        }
+        &_third {
+            &::before {
+                background: url('../img/tires.jpeg') center (center / cover) no-repeat;
+            }
+        }
+        &_fourth {
+            &::before {
+                background: url('../img/interior.jpeg') center (center / cover) no-repeat;
+            }
+        }
+        &__header {
+            margin-bottom: 22px;
+            font-weight: 500;
+            font-size: 28px;
+            text-align: center;
+        }
+        &__list {
+            list-style: none;
+        }
+        &__item {
+            position: relative;
+            margin-top: 9px;
+            padding-left: 32px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 17px;
+                top: 6px;
+                border-top: 6px solid transparent;
+                border-bottom: 6px solid transparent;
+                border-left: 10px solid;
+
+            }
+        }
+    }
+}

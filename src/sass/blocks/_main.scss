@@ -1,0 +1,92 @@
+.main {
+    margin: 48px 0;
+    color: #212529;
+    &__header {
+        padding-left: 12px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: .35px;
+    }
+    &__wrapper {
+        padding-top: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 12px;
+    }
+    &__about {
+        padding: 0 12px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        span {
+            font-weight: 400;
+        }
+    }
+    &__subheader {
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__list {
+        margin-top: 16px;
+        list-style-type: none;
+        &__item {
+            position: relative;
+            padding: 10px 0 11px 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+            font-weight: 400;
+            font-size: 16px;
+            &:last-child {
+                border-bottom: none;
+            }
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 12px;
+                width: 16px;
+                height: 16px;
+                background: url("../icons/check.svg") center (center / cover) no-repeat;
+            }
+        }
+        &__descr {
+            margin-top: 7px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    &__important {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: .35px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__btn {
+        display: inline-block;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 11px 27px;
+        background: #DC3545;
+        border-radius: 4.8px;
+        text-decoration: none;
+        margin-top: 32px;
+        margin-left: 30%;
+        transition: .3s all;
+        &:hover {
+            background: #b12937;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+        }
+    }
+}

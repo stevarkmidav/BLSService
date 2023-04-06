@@ -1,0 +1,87 @@
+.header {
+    background-color: #212529;
+    padding: 13px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 12px;
+    }
+    &__logo {
+        &__img {
+            width: 80px;
+            height: auto;
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__list {
+        width: 345px;
+        margin-right: 33px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    &__item {
+        &__link {
+            position: relative;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            padding-bottom: 4px;
+            &::before {
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 50%;
+                position: absolute;
+                background: rgb(214, 213, 213);
+                transition: width 0.4s ease 0s, left 0.4s ease 0s;
+                width: 0;
+            }
+            &:hover {
+                &::before {
+                    width: 100%; 
+                    left: 0; 
+                }
+            }
+        }
+    }
+    &__lang {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        color: #6C757D;
+        transition: .3s all;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+        }
+        &__img {
+            margin-right: 8px;
+        }
+        &__number {
+            font-weight: 500;
+            font-size: 19px;
+            color: #FFFFFF;
+
+        }
+    }
+}

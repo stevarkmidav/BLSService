@@ -1,0 +1,132 @@
+.promo {
+    width: 100%;
+    &__slider {
+        position: relative;
+        height: 70vh;
+        min-height: 350px;
+        overflow: hidden;
+    }
+    &__slides {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300%;
+        height: 100%;
+        display: flex;
+        transition: transform .6s ease-in-out;
+    }
+    &__slide {
+        position: relative;
+        flex-basis: 100%;
+        width: 100%;
+        height: 100%;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            filter: brightness(60%);
+            z-index: -1;
+        }
+        &_first {
+            &::before {
+                background: url('../img/engine.jpeg') scroll (center / cover) no-repeat ;
+            }
+        }
+        &_second {
+            &::before {
+                background: url('../img/wheel_change.jpeg') scroll (center / cover) no-repeat;
+            }
+        }
+        &_third {
+            &::before {
+                background: url('../img/engine_chain.webp') scroll (center / cover) no-repeat;
+            }
+        }
+        &__about {
+            margin-top: 20px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 35%;
+            bottom: auto;
+        }
+        &__header {
+            font-weight: 500;
+            font-size: 40px;
+            color: #FFFFFF;
+        }
+        &__descr {
+            font-weight: 300;
+            font-size: 20px;
+            color: #FFFFFF;
+            margin-top: 10px;
+        }
+        &__btn {
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 11px 27px;
+            background: #DC3545;
+            border-radius: 4.8px;
+            text-decoration: none;
+            margin-top: 17px;
+            transition: .3s all;
+            &:hover {
+                background: #b12937;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+            }
+        }
+        &__direction {
+            position: absolute;
+            width: 15%;
+            height: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: .5;
+            transition: opacity .15s ease;
+            &:hover {
+                opacity: 1;
+            }
+            &_prev {
+                left: 0;
+            }
+            &_next {
+                right: 0;
+            }
+        }
+        &__indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 102px;
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            height: 23px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        &__indicator {
+            box-sizing: content-box;
+            width: 30px;
+            height: 3px;
+            background: #FFFFFF;
+            opacity: 0.5;
+            transition: all .6s ease;
+            &_active {
+                opacity: 1;
+            }
+        }
+    }
+}

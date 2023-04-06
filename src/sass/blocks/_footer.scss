@@ -1,0 +1,24 @@
+.footer {
+    background: #212529;
+    position: relative;
+    &__descr {
+        text-align: center;
+        padding: 19px 0;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 17px;
+    }
+    &__developer {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        text-decoration: none;
+        color: #9da0a3;
+        font-weight: 300;
+        font-size: 11px;
+        transition: .3s all;
+        &:hover {
+            color: #DEE2E6;
+        }
+    }
+}
