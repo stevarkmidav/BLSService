@@ -3,7 +3,7 @@
     &__slider {
         position: relative;
         height: 70vh;
-        min-height: 350px;
+        min-height: 500px;
         overflow: hidden;
     }
     &__slides {
@@ -62,6 +62,7 @@
             font-weight: 500;
             font-size: 40px;
             color: #FFFFFF;
+            text-transform: uppercase;
         }
         &__descr {
             font-weight: 300;

@@ -8,7 +8,6 @@
         gap: 12px;
     }
     &__logos {
-        width: 209px;
         margin: 0 20px;
         display: flex;
         justify-content: space-between;
@@ -16,6 +15,13 @@
     &__logo {
         height: 49px;
         width: auto;
+        &_bmw {
+            margin-right: 7px;
+        }
+        &_rolls {
+            filter: invert(100%);
+            scale: 1.15;
+        }
     }
     &__descr {
         font-weight: 400;

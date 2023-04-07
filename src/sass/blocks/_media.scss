@@ -88,6 +88,13 @@
         &__wrap {
             padding: 0;
         }
+        &__img {
+            &:hover {
+                transform: none;
+                opacity: 1;
+                filter: none;
+            }
+        }
     }
     .services {
         &__wrapper {
@@ -158,6 +165,7 @@
     .header {
         &__nav {
             flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
             gap: 20px;
         }
