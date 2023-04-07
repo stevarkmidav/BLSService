@@ -1,0 +1,23 @@
+.fancybox {
+    &__caption {
+        display: none;
+    }
+    &__toolbar {
+        &__column {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+        }
+        &__column {
+            .f-button {
+                &:nth-child(n+2):nth-child(-n+4) {
+                display: none;
+                }
+            }
+        }
+    }
+    &__backdrop {
+        background: rgba(0,0,0,.92) !important;
+    }
+}

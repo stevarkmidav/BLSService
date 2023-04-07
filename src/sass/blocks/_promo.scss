@@ -110,30 +110,34 @@
             left: 50%;
             transform: translateX(-50%);
             width: 102px;
-            height: 20px;
+            // height: 20px;
             display: flex;
             justify-content: space-between;
         }
-        &__item {
-            height: 23px;
+        &__indicator {
+            position: relative;
+            padding: 10px 0;
+            height: 3px;
+            width: 30px;
             display: flex;
             align-items: center;
             cursor: pointer;
-        }
-        &__indicator {
-            box-sizing: content-box;
-            width: 30px;
-            height: 3px;
-            background: #FFFFFF;
-            opacity: 0.5;
-            transition: all .6s ease;
-            &_active {
-                box-sizing: content-box;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
                 width: 30px;
                 height: 3px;
                 background: #FFFFFF;
-                opacity: 1;
+                opacity: 0.5;
                 transition: all .6s ease;
+            }
+            &_active {
+                &::before {
+                    opacity: 1;
+                }
             }
         }
     }
