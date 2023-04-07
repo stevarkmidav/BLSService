@@ -1,4 +1,4 @@
-.main {
+.about {
     margin: 48px 0;
     color: #212529;
     &__header {
@@ -11,10 +11,10 @@
     &__wrapper {
         padding-top: 12px;
         display: grid;
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 49%);
         column-gap: 12px;
     }
-    &__about {
+    &__content {
         padding: 0 12px;
     }
     &__descr {
@@ -72,21 +72,30 @@
         }
     }
     &__btn {
-        display: inline-block;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        font-weight: 700;
-        font-size: 20px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         padding: 11px 27px;
         background: #DC3545;
         border-radius: 4.8px;
-        text-decoration: none;
         margin-top: 32px;
-        margin-left: 30%;
+        border: none;
+        box-sizing: border-box;
         transition: .3s all;
         &:hover {
             background: #b12937;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
         }
+        &__link {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        height: auto;
     }
 }

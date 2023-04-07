@@ -1,0 +1,213 @@
+@media (max-width: 1400px) {
+    .container {
+        padding: 0 20px;
+    }
+    .gallery {
+        &__wrap {
+            column-width: 250px;
+        }
+    }
+    .contacts {
+        &__about {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .promo {
+        &__slide {
+            &__header {
+                font-size: 32px;
+            }
+            &__about {
+                max-width: 70%;
+            }
+        }
+    }
+    .about {
+        &__header {
+            font-size: 32px;
+        }
+        &__descr {
+            font-size: 18px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            gap: 40px;
+        }
+        &__about {
+            width: 560px;
+        }
+    }
+    .instagram__btn_contacts {
+        margin: 25px auto 0 auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .about {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 40px;
+        }
+        &__content {
+            order: 2;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__wrapper {
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__item {
+            &__link {
+                &:hover {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .about {
+        &__header {
+            padding-left: 0;
+        }
+        &__content {
+            padding: 0;
+        }
+    }
+    .gallery {
+        padding: 44px 0 64px 0;
+        &__wrap {
+            padding: 0;
+        }
+    }
+    .services {
+        &__wrapper {
+            grid-template-columns: minmax(280px, 500px);
+            grid-template-rows: min-content;
+        }
+    }
+    .reviews {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 1fr;
+            margin-top: 40px;
+        }
+        &__blocks {
+            &__item {
+                &_second {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .contacts {
+        &__about {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .top {
+        &__wrapper {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    .promo {
+        &__slide {
+            &__about {
+                top: 25%;
+                max-width: 80%;
+            }
+            &__header {
+                font-size: 28px;
+            }
+            &__descr {
+                font-size: 16px;
+            }
+            &__btn {
+                margin-top: 25px;
+                font-size: 15px;
+            }
+        }
+    }
+    .contacts {
+        &__map {
+            iframe {
+                width: 410px;
+                height: 230px;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 10px;
+    }
+    .header {
+        &__nav {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        &__list {
+            width: 280px;
+            justify-content: space-evenly;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-right: 0;
+        }
+    }
+    .about {
+        &__header {
+            line-height: 1.2;
+            font-size: 28px;
+        }
+    }
+    .instagram__descr {
+        font-size: 16px;
+    }
+    .services {
+        &__header {
+            font-size: 28px;
+        }
+        &__about {
+            font-size: 18px;
+        }
+    }
+    .benefits {
+        &__header {
+            font-size: 28px;
+        }
+        &__about {
+            font-size: 18px;
+        }
+    }
+    .reviews {
+        &__header {
+            font-size: 28px;
+        }
+    }
+    .contacts {
+        &__header {
+            font-size: 28px;
+        }
+        &__map {
+            iframe {
+                width: 300px;
+                height: 230px;
+            }
+        }
+    }
+}
