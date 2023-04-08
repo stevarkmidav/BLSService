@@ -36,6 +36,15 @@
             max-width: 100%;
         }
     }
+.gallery {
+    &__img {
+        &:hover {
+            transform: none;
+            opacity: 1;
+            filter: none;
+        }
+    }
+}
     .contacts {
         &__wrapper {
             gap: 40px;
@@ -97,13 +106,6 @@
         padding: 44px 0 64px 0;
         &__wrap {
             padding: 0;
-        }
-        &__img {
-            &:hover {
-                transform: none;
-                opacity: 1;
-                filter: none;
-            }
         }
     }
     .services {
