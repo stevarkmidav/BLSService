@@ -15,6 +15,17 @@
 }
 
 @media (max-width: 1000px) {
+    .header {
+        &__item {
+            &__link {
+                &:hover {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     .swiper {
         &-slide {
             &__header {
@@ -36,15 +47,15 @@
             max-width: 100%;
         }
     }
-.gallery {
-    &__img {
-        &:hover {
-            transform: none;
-            opacity: 1;
-            filter: none;
+    .gallery {
+        &__img {
+            &:hover {
+                transform: none;
+                opacity: 1;
+                filter: none;
+            }
         }
     }
-}
     .contacts {
         &__wrapper {
             gap: 40px;
@@ -83,15 +94,6 @@
         &__wrapper {
             flex-direction: column;
             gap: 20px;
-        }
-        &__item {
-            &__link {
-                &:hover {
-                    &::before {
-                        display: none;
-                    }
-                }
-            }
         }
     }
     .about {
