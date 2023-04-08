@@ -15,8 +15,8 @@
 }
 
 @media (max-width: 1000px) {
-    .promo {
-        &__slide {
+    .swiper {
+        &-slide {
             &__header {
                 font-size: 32px;
             }
@@ -31,6 +31,9 @@
         }
         &__descr {
             font-size: 18px;
+        }
+        &__img {
+            max-width: 100%;
         }
     }
     .contacts {
@@ -130,8 +133,8 @@
             text-align: center;
         }
     }
-    .promo {
-        &__slide {
+    .swiper {
+        &-slide {
             &__about {
                 top: 25%;
                 max-width: 80%;
