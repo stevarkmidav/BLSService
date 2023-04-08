@@ -50,6 +50,13 @@
 }
 
 @media (max-width: 900px) {
+    .swiper {
+        &-slide {
+            &__about {
+                top: 18%;
+            }
+        }
+    }
     .about {
         &__wrapper {
             grid-template-columns: 1fr;
@@ -136,8 +143,8 @@
     .swiper {
         &-slide {
             &__about {
-                top: 25%;
-                max-width: 80%;
+                top: 12%;
+                max-width: 70%;
             }
             &__header {
                 font-size: 28px;
