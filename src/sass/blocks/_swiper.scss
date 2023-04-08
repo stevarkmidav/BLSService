@@ -2,21 +2,6 @@
     width: 100%;
     min-height: 400px;
     height: 70vh;
-    // &__slider {
-    //     position: relative;
-    //     height: 70vh;
-    //     min-height: 500px;
-    //     overflow: hidden;
-    // }
-    // &__slides {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 300%;
-    //     height: 100%;
-    //     display: flex;
-    //     transition: transform .6s ease-in-out;
-    // }
     &-slide {
         position: relative;
         flex-basis: 100%;
