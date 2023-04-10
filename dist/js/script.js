@@ -1,10 +1,10 @@
-window.addEventListener('DOMContentLoaded', () => {
   //swiper
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
     speed: 600,
+    focusableElements: 'button',
     
     // Pagination
     pagination: {
@@ -29,4 +29,3 @@ window.addEventListener('DOMContentLoaded', () => {
   Fancybox.bind('[data-fancybox="gallery"]', {
   // Custom option
   });
-});

@@ -72,27 +72,29 @@
         }
     }
     &__btn {
+        display: block;
         position: relative;
         width: max-content;
+        height: auto;
         left: 50%;
         transform: translateX(-50%);
         padding: 11px 27px;
         background: #DC3545;
         border-radius: 4.8px;
         margin-top: 32px;
-        border: none;
         box-sizing: border-box;
         transition: .3s all;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
         &:hover {
             background: #b12937;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
         }
-        &__link {
-            color: #FFFFFF;
-            font-weight: 700;
-            font-size: 20px;
-            text-decoration: none;
-            text-transform: uppercase;
+        &:focus {
+            outline: 1px solid #DC3545;
         }
     }
     &__img {

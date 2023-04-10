@@ -35,7 +35,7 @@
             font-size: 16px;
             color: #FFFFFF;
             text-transform: uppercase;
-            padding-bottom: 4px;
+            padding: 8px 0 4px 0;
             &::before {
                 bottom: 0;
                 content: "";
@@ -62,6 +62,8 @@
         font-size: 16px;
         color: #6C757D;
         transition: .3s all;
+        padding: 8px 0 4px 0;
+        margin-bottom: 4px;
         &:hover {
             color: #FFFFFF;
         }
@@ -74,6 +76,7 @@
             justify-content: space-between;
             align-items: center;
             text-decoration: none;
+            padding: 8px;
         }
         &__img {
             margin-right: 8px;
