@@ -43,22 +43,22 @@
         }
         &_first {
             &::before {
-                background: url('../img/tools.jpeg') center (center / cover) no-repeat ;
+                background: url('../img/bg/tools.jpeg') center (center / cover) no-repeat ;
             }
         }
         &_second {
             &::before {
-                background: url('../img/wheels.jpeg') center (center / cover) no-repeat;
+                background: url('../img/bg/wheels.jpeg') center (center / cover) no-repeat;
             }
         }
         &_third {
             &::before {
-                background: url('../img/tires.jpeg') center (center / cover) no-repeat;
+                background: url('../img/bg/tires.jpeg') center (center / cover) no-repeat;
             }
         }
         &_fourth {
             &::before {
-                background: url('../img/interior.jpeg') center (center / cover) no-repeat;
+                background: url('../img/bg/interior.jpeg') center (center / cover) no-repeat;
             }
         }
         &__header {
