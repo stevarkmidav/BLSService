@@ -11,7 +11,7 @@
     &__wrapper {
         padding-top: 12px;
         display: grid;
-        grid-template-columns: repeat(2, 49%);
+        grid-template-columns: repeat(2, calc(50% - 6px));
         column-gap: 12px;
     }
     &__content {
@@ -98,7 +98,7 @@
         }
     }
     &__img {
-        max-width: 80%;
+        width: 100%;
         height: auto;
         margin: 0 auto;
     }

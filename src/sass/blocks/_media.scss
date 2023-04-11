@@ -37,6 +37,14 @@
         }
     }
     .about {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 40px;
+        }
+        &__content {
+            order: 2;
+        }
         &__header {
             font-size: 32px;
         }
@@ -44,7 +52,7 @@
             font-size: 18px;
         }
         &__img {
-            max-width: 100%;
+            max-width: 80%;
         }
     }
     .gallery {
@@ -77,16 +85,6 @@
             }
         }
     }
-    .about {
-        &__wrapper {
-            grid-template-columns: 1fr;
-            justify-items: center;
-            gap: 40px;
-        }
-        &__content {
-            order: 2;
-        }
-    }
 }
 
 @media (max-width: 768px) {
@@ -102,6 +100,9 @@
         }
         &__content {
             padding: 0;
+        }
+        &__img {
+            max-width: 100%;
         }
     }
     .gallery {
