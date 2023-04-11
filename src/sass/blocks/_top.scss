@@ -1,27 +1,11 @@
 .top {
     background-color: #DEE2E6;
-    &__wrapper{
-        padding: 8px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-    }
-    &__logos {
-        margin: 0 20px;
-        width: 215px;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__logo {
-        height: 49px;
-        width: auto;
-    }
     &__descr {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 22px;
         color: #212529;
-        padding-right: 6px;
+        text-align: center;
+        padding: 15px 0;
         span{
             font-weight: 700;
             letter-spacing: .6px;

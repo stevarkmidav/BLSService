@@ -78,6 +78,12 @@
 }
 
 @media (max-width: 900px) {
+    .top {
+        &__descr {
+            font-size: 16px;
+            padding: 7px 0;
+        }
+    }
     .swiper {
         &-slide {
             &__about {
@@ -182,7 +188,7 @@
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
-            gap: 20px;
+            gap: 10px;
         }
         &__list {
             width: 280px;
